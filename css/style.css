@@ -3,9 +3,19 @@
   padding: 0;
   font-family: sans-serif; }
 
-p {
-  font-size: 1.5rem;
-  color: green; }
-
-h3 {
-  background-color: beige; }
+#main_article {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto 1fr; }
+  #main_article > h1 {
+    align-self: end; }
+  #main_article > h3 {
+    background-color: beige; }
+  #main_article > p {
+    align-self: start;
+    font-size: 1.5rem;
+    color: green;
+    transition: color 0.3s linear; }
+    #main_article > p:hover {
+      color: orange; }
